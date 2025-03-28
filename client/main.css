@@ -1,1 +1,55 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: "Outfit";
+    src: url("/imports/ui/fonts/outfit.ttf") format("truetype");
+    font-style: normal;
+}
+
+@theme {
+    /* Backgrounds */
+    --color-background-100: #071013;  /* main background */
+    --color-background-200: #0B1A22;  /* elevated panels/cards */
+    --color-background-300: #11252E;  /* hover/active background */
+
+    /* Primary Accent (Meteor Red) */
+    --color-primary-100: #FF6B6B;     /* soft red for subtle accents */
+    --color-primary-200: #FF4F4F;     /* standard red highlight */
+    --color-primary-300: #B11F1F;     /* bold primary action red */
+    --color-primary-hover: #D63131;   /* hover state for buttons/links */
+
+    /* Secondary (Meteor Trail / Flame) */
+    --color-secondary-100: #FDBA74;   /* soft orange (hover background, tag highlights) */
+    --color-secondary-200: #FB923C;   /* brighter flame-orange */
+
+    /* Text */
+    --color-text-main: #F4F4F9;       /* main text (twhite) */
+    --color-text-secondary: #C2C6CC;  /* muted text for descriptions */
+    --color-text-hover: #FFFFFF;      /* bright on-hover */
+    --color-link: #FF6B6B;            /* links */
+    --color-link-hover: #FF9A9A;      /* link hover/focus */
+
+    /* Borders / Lines / Dividers */
+    --color-border: #1E2A32;
+    --color-divider: #2D3B44;
+
+    /* Alerts or Callouts (Optional) */
+    --color-success: #22C55E;
+    --color-warning: #FACC15;
+    --color-error: #EF4444;
+
+    /* Font */
+    --font-outfit: "Outfit", sans-serif;
+}
+body{
+    background-color: #071013;
+}
+
+.no-scrollbar {
+    scrollbar-width: none;     /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari, Opera */
+  }
